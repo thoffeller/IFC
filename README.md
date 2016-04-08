@@ -1,1 +1,1 @@
-# IFC
+# Playground for IFC Schema
