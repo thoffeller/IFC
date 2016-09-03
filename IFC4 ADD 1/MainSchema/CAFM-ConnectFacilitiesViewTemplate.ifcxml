@@ -113,7 +113,7 @@
 			<IfcClassification ref="i126" xsi:nil="true"/>
 		</RelatingClassification>
 	</IfcRelAssociatesClassification>
-	<IfcClassificationReference id="i128" Identification="300" Name="BAUWERK - BAUKONSTRUKTIONEN" Sort="0">
+	<IfcClassificationReference id="i128" GlobalId="1fbJ0AXVj7qQIdiMHqoMyl" Identification="300" Name="BAUWERK - BAUKONSTRUKTIONEN" Sort="0">
 		<HasReferences>
 			<IfcClassificationReference id="i132" Identification="330" Name="Außenwände, -türen, -tore und -fenster" Sort="0">
 				<HasReferences>
@@ -893,14 +893,14 @@
 			<IfcClassificationReference ref="i152" xsi:nil="true"/>
 		</RelatingClassification>
 	</IfcRelAssociatesClassification>
-	<IfcPropertySetTemplate id="i157" GlobalId="2DeVW21T54MvNyDeOrUn9O" Name="Außentür" Description="Türen einschließlich Umrahmungen, Beschlägen, Antrieben, Lüftungselementen und sonstigen eingebauten Elementen" ApplicableEntity="IfcDoor">
+	<IfcPropertySetTemplate id="i157" GlobalId="2DeVW21T54MvNyDeOrUn9O" Language="DE-de" Name="Außentür" Description="Türen einschließlich Umrahmungen, Beschlägen, Antrieben, Lüftungselementen und sonstigen eingebauten Elementen" ApplicableEntity="IfcDoor">
 		<HasPropertyTemplates>
 			<IfcSimplePropertyTemplate id="i158" GlobalId="0qRvdT3abDKfNj3EtPset7" Name="Beschreibung" Description="Freitextfeld zur allgemeinen Beschreibung von Objektinformationen" TemplateType="p_singlevalue" PrimaryMeasureType="IfcText" pos="0"/>
 			<IfcSimplePropertyTemplate id="i159" GlobalId="0mb$wPzVL4Lw29xSsZI9gm" Name="Automatischer Antrieb" Description="Angabe, ob dieses Bauteil einen automatischen Antrieb (kraftbetärtigt) zum Öffnen und Schließen besitzt (JA) oder nicht (NEIN)." TemplateType="p_singlevalue" PrimaryMeasureType="IfcBoolean" pos="1"/>
 			<IfcSimplePropertyTemplate id="i160" GlobalId="0TsTShWprBqBATZkBjo22i" Name="Öffnungsart" Description="" TemplateType="p_enumeratedvalue" PrimaryMeasureType="IfcText" pos="2">
 				<Enumerators>
 					<EnumerationValues>
-						<IfcLabel-wrapper pos="0">Drehtür</IfcLabel-wrapper>
+						<IfcLabel-wrapper GlobalId="0qRvdT3abDKfNj3EtPset7" pos="0">Drehtür</IfcLabel-wrapper>
 						<IfcLabel-wrapper pos="1">Falttür</IfcLabel-wrapper>
 						<IfcLabel-wrapper pos="2">Hebedrehtür</IfcLabel-wrapper>
 						<IfcLabel-wrapper pos="3">Hebeschiebetür</IfcLabel-wrapper>
