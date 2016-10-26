@@ -2853,6 +2853,7 @@ of the material. The information contained in this document is subject to change
 				<xs:attribute name="Location" type="ifc:IfcURIReference" use="optional"/>
 				<xs:attribute name="Identification" type="ifc:IfcIdentifier" use="optional"/>
 				<xs:attribute name="Name" type="ifc:IfcLabel" use="optional"/>
+				<xs:attribute name="GlobalId" type="ifc:IfcGloballyUniqueId" use="optional"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -5479,6 +5480,7 @@ of the material. The information contained in this document is subject to change
 			<xs:extension base="ifc:IfcPropertyAbstraction">
 				<xs:attribute name="Name" type="ifc:IfcIdentifier" use="optional"/>
 				<xs:attribute name="Description" type="ifc:IfcText" use="optional"/>
+        <xs:attribute name="GlobalId" type="ifc:IfcGloballyUniqueId" use="optional"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -5564,6 +5566,7 @@ of the material. The information contained in this document is subject to change
 							<xs:attribute ref="ifc:itemType" fixed="ifc:IfcValue"/>
 							<xs:attribute ref="ifc:cType" fixed="list-unique"/>
 							<xs:attribute ref="ifc:arraySize" use="optional"/>
+							<xs:attribute name="GlobalId" type="ifc:IfcGloballyUniqueId" use="optional"/>
 						</xs:complexType>
 					</xs:element>
 					<xs:element name="Unit" nillable="true" minOccurs="0">
@@ -5572,6 +5575,7 @@ of the material. The information contained in this document is subject to change
 						</xs:complexType>
 					</xs:element>
 				</xs:sequence>
+				<xs:attribute name="GlobalId" type="ifc:IfcGloballyUniqueId" use="optional"/>
 				<xs:attribute name="Name" type="ifc:IfcLabel" use="optional"/>
 			</xs:extension>
 		</xs:complexContent>
@@ -6647,6 +6651,7 @@ of the material. The information contained in this document is subject to change
 		<xs:complexContent>
 			<xs:extension base="ifc:IfcRelDefines">
 				<xs:sequence>
+				    <xs:element name="RelatedObjects" type="ifc:IfcObjectDefinition" nillable="true" maxOccurs="1"/>
 					<xs:element name="RelatingPropertyDefinition">
 						<xs:complexType>
 							<xs:group ref="ifc:IfcPropertySetDefinitionSelect"/>
@@ -13617,6 +13622,7 @@ of the material. The information contained in this document is subject to change
 		<xs:complexType>
 			<xs:simpleContent>
 				<xs:extension base="ifc:IfcLabel">
+					<xs:attribute name="GlobalId" type="ifc:IfcGloballyUniqueId" use="optional"/>
 					<xs:attributeGroup ref="ifc:instanceAttributes"/>
 				</xs:extension>
 			</xs:simpleContent>
